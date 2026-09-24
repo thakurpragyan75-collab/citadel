@@ -1,10 +1,6 @@
 # Citadel
 
-Local sovereignty agent. Pure code. No cloud brain.
-
-Exposure map, tap analysis, anomaly watch, consent beacon, tracking tax, panic switch. Every action writes a SHA-256 receipt on this device.
-
-This is **your** browser as the castle. It is not a kit to watch someone else. There is no stealth mode, no remote install, no hidden location.
+Privacy checks that run from this project. No account.
 
 ## Run
 
@@ -13,24 +9,16 @@ npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually `http://localhost:5173`).
+The dev server listens on port 8080.
 
-## Commands
+## Pages
 
-| Command | Route | What it does |
-|---|---|---|
-| `exposure` | `/leak` | Scores how joinable *you* are from identifiers + this browser fingerprint |
-| `tap` | `/tap` | Matches hosts against a packed tracker list vs a privacy claim |
-| `watch` | `/watch` | Samples *this* browser: battery, hidden tab, downlink, heap |
-| `beacon` | `/beacon` | Consented household location on this device only. Every look is a receipt |
-| `tax` | `/tax` | Cuts client entropy. Makes following you expensive |
-| `panic` | `/panic` | Wipes identity, stops watch, revokes grants, freezes modules |
-| `ledger` | `/ledger` | Hash-chained receipts. Verify integrity |
+- Scan my details
+- Check an app or website by name (`/api/check`)
+- Watch this browser
+- Family location on a Google map: show live, hide, or choose a place
+- Privacy switches
+- Wipe and activity log on one page
+- Twenty checks under All checks
 
-## Stack
-
-React 19 + Vite + TypeScript + Tailwind v4 + Zustand. Rules engines live in `src/lib/engine/`.
-
-## Law of the house
-
-You are the only admin. Beacon cannot see anyone who did not grant you. Panic is loud on purpose.
+A chosen place is labeled as chosen, not as live GPS. Location stays on this screen.
